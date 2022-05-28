@@ -707,6 +707,16 @@ a.hero-icon {
 		align-items: center;
 	}
 
+  .text-center-on-mobile {
+    &, * {
+      text-align: center !important;
+    }
+  }
+
+  .widen-gap-on-mobile {
+    gap: 2rem;
+  }
+
 	body::before {
 		background-position: center;
 	}

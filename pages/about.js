@@ -34,7 +34,7 @@ export default function Home() {
 			</section>
 
 			<section className='centered' style={{ marginBlock: '2rem' }}>
-				<div className='boxed flex'>
+				<div className='boxed flex switch-on-mobile widen-gap-on-mobile'>
 					<div className='stat'>
 						<h1>27,983</h1>
 						<h2>Served Users (2021)</h2>
@@ -53,7 +53,7 @@ export default function Home() {
 			</section>
 
 			<section className='centered' style={{ marginTop: '3rem' }}>
-				<div className='flex' style={{ gap: '2rem' }}>
+				<div className='flex switch-on-mobile' style={{ gap: '2rem' }}>
 					<div>
 						<div className='hero-image'>
 							<img
@@ -64,7 +64,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div style={{ flex: '5 1' }} className='remove-hero-half'>
+					<div style={{ flex: '5 1' }} className='remove-hero-half text-center-on-mobile'>
 						<p className='hero-text' style={{ marginTop: 0 }}>
 							Hi, I&apos;m William. My passion is to create
 							anything creative on the internet.
