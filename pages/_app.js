@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
 
 		Router.events.on('routeChangeStart', () => {
 			document.body.scrollTo({ top: 0, behavior: 'smooth' });
+			setMenuOpen(false);
 		});
 	}, []);
 
@@ -104,21 +105,29 @@ function MyApp({ Component, pageProps }) {
 					</a>
 				</section>
 				<section className='mobile-links'>
-					<a className='link' href='#'>
-						<span>Home</span>
-					</a>
+						<Link href='/'>
+							<a className='link'>
+								<span>Home</span>
+							</a>
+						</Link>
 
-					<a className='link' href='#'>
-						<span>About me</span>
-					</a>
+						<Link href='/about'>
+							<a className='link'>
+								<span>About me</span>
+							</a>
+						</Link>
 
-					<a className='link' href='#'>
-						<span>Projects</span>
-					</a>
+						<Link href='/projects'>
+							<a className='link'>
+								<span>Projects</span>
+							</a>
+						</Link>
 
-					<a className='link' href='#'>
-						<span>Tools</span>
-					</a>
+						<Link href='/tools'>
+							<a className='link'>
+								<span>Tools</span>
+							</a>
+						</Link>
 				</section>
 			</nav>
 
