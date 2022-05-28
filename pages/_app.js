@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import Router from 'next/router';
 import '../styles/globals.scss';
 
@@ -24,6 +25,167 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
+			<Head>
+				<meta
+					name='viewport'
+					itemProp='viewport'
+					property='viewport'
+					content='width=device-width'
+				/>
+
+				<meta
+					name='og:site_name'
+					itemProp='og:site_name'
+					property='og:site_name'
+					content='William Wise (@RealSGII2)'
+				/>
+				<meta
+					name='author'
+					itemProp='author'
+					property='author'
+					content='William Wise'
+				/>
+
+				<title>William Wise</title>
+				<meta
+					name='title'
+					itemProp='title'
+					property='title'
+					content='William Wise'
+				/>
+				<meta
+					name='og:title'
+					itemProp='og:title'
+					property='og:title'
+					content='William Wise'
+				/>
+
+				<meta
+					name='description'
+					itemProp='description'
+					property='description'
+					content="Hello, I'm William Wise. I'm a hobbyist web developer based in Arkansas. I like to build things that allow others to do things."
+				/>
+				<meta
+					name='og:description'
+					itemProp='og:description'
+					property='og:description'
+					content="Hello, I'm William Wise. I'm a hobbyist web developer based in Arkansas. I like to build things that allow others to do things."
+				/>
+				<meta
+					name='twitter:description'
+					itemProp='twitter:description'
+					property='twitter:description'
+					content="Hello, I'm William Wise. I'm a hobbyist web developer based in Arkansas. I like to build things that allow others to do things."
+				/>
+
+				<meta
+					name='image'
+					itemProp='image'
+					property='image'
+					content='https://cdn.discordapp.com/attachments/713528119285252106/979918119051067483/Frame_6_2.png'
+				/>
+				<meta
+					name='og:image'
+					itemProp='og:image'
+					property='og:image'
+					content='https://cdn.discordapp.com/attachments/713528119285252106/979918119051067483/Frame_6_2.png'
+				/>
+				<meta
+					name='twitter:image'
+					itemProp='twitter:image'
+					property='twitter:image'
+					content='https://cdn.discordapp.com/attachments/713528119285252106/979918119051067483/Frame_6_2.png'
+				/>
+				<meta
+					name='twitter:image:src'
+					itemProp='twitter:image:src'
+					property='twitter:image:src'
+					content='https://cdn.discordapp.com/attachments/713528119285252106/979918119051067483/Frame_6_2.png'
+				/>
+
+				<meta
+					name='keywords'
+					itemProp='keywords'
+					property='keywords'
+					content='portfolio, skills, developer, development, nodejs, react, scss, c#, typescript, javascript, css, html, python, design, iconography, illustration'
+				/>
+				<meta
+					property='twitter:card'
+					name='twitter:card'
+					content='summary_large_image'
+				/>
+				<meta name="og:locale" itemProp="og:locale" property="og:locale" content="en_US" />
+
+				<meta
+					name='theme-color'
+					itemProp='theme-color'
+					property='theme-color'
+					content='#99d5cb'
+				/>
+				<meta
+					name='apple-mobile-web-app-status-bar-style'
+					itemProp='apple-mobile-web-app-status-bar-style'
+					property='apple-mobile-web-app-status-bar-style'
+					content='#080f1e'
+				/>
+				<meta
+					name='msapplication-TileColor'
+					itemProp='msapplication-TileColor'
+					property='msapplication-TileColor'
+					content='#99d5cb'
+				/>
+				<meta
+					name='msapplication-navbutton-color'
+					itemProp='msapplication-navbutton-color'
+					property='msapplication-navbutton-color'
+					content='#99d5cb'
+				/>
+
+				<meta
+					name='og:type'
+					itemProp='og:type'
+					property='og:type'
+					content='portfolio'
+				/>
+
+				<meta
+					name='og:url'
+					itemProp='og:url'
+					property='og:url'
+					content='https://wwise.dev/'
+				/>
+				<meta
+					name='twitter:url'
+					itemProp='twitter:url'
+					property='twitter:url'
+					content='https://wwise.dev/'
+				/>
+				<link rel='canonical' href='https://wwise.dev' />
+
+				<link
+					rel='shortcut icon'
+					href='https://cdn.discordapp.com/attachments/713528119285252106/979921688403800164/Frame_736.png'
+				/>
+				<link rel='apple-touch-icon' href='https://cdn.discordapp.com/attachments/713528119285252106/979921688609312818/Frame_757.png' />
+				<link rel='apple-touch-icon' sizes='72x72' href='https://cdn.discordapp.com/attachments/713528119285252106/979921687615266836/Frame_7114.png' />
+				<link rel='apple-touch-icon' sizes='114x114' href='https://cdn.discordapp.com/attachments/713528119285252106/979921688835797032/Frame_772.png' />
+				<link
+					rel='apple-tocuh-icon-precomposed'
+					href='https://cdn.discordapp.com/attachments/713528119285252106/979921688403800164/Frame_736.png'
+				/>
+				<link
+					rel='icon'
+					sizes='32x32'
+					href='https://cdn.discordapp.com/attachments/713528119285252106/979921688403800164/Frame_736.png'
+				/>
+				<meta
+					name='msapplication-TileImage'
+					itemProp='msapplication-TileImage'
+					property='msapplication-TileImage'
+					value='https://cdn.discordapp.com/attachments/713528119285252106/979921688403800164/Frame_736.png'
+				/>
+			</Head>
 			<nav className={`appbar ${menuOpen ? 'open' : ''}`}>
 				<section className='centered'>
 					<svg
@@ -105,29 +267,29 @@ function MyApp({ Component, pageProps }) {
 					</a>
 				</section>
 				<section className='mobile-links'>
-						<Link href='/'>
-							<a className='link'>
-								<span>Home</span>
-							</a>
-						</Link>
+					<Link href='/'>
+						<a className='link'>
+							<span>Home</span>
+						</a>
+					</Link>
 
-						<Link href='/about'>
-							<a className='link'>
-								<span>About me</span>
-							</a>
-						</Link>
+					<Link href='/about'>
+						<a className='link'>
+							<span>About me</span>
+						</a>
+					</Link>
 
-						<Link href='/projects'>
-							<a className='link'>
-								<span>Projects</span>
-							</a>
-						</Link>
+					<Link href='/projects'>
+						<a className='link'>
+							<span>Projects</span>
+						</a>
+					</Link>
 
-						<Link href='/tools'>
-							<a className='link'>
-								<span>Tools</span>
-							</a>
-						</Link>
+					<Link href='/tools'>
+						<a className='link'>
+							<span>Tools</span>
+						</a>
+					</Link>
 				</section>
 			</nav>
 
